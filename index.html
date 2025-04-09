@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinergia</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsividade.css">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!--Botão voltar ao topo-->
+    <div id="backToTop" class="fixed-button">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+
+    <!--Container Geral-->
+    <div class="container">
+
+        <!--Header-->
+        <header class="header">
+            <div class="logo">
+                <img src="assets/img/logo_sinergia.png"style="pointer-events: none;">
+            </div>
+            <div class="menu">
+                <label class="hamburger">
+                    <input type="checkbox" id="menuToggle">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="menu-aberto">
+                <nav class="nav-menu">
+                    <a href="#inicio">INÍCIO</a>
+                    <a href="#sobre">SOBRE NÓS</a>
+                    <a href="#conectados">CONECTADOS</a>
+                </nav>
+            </div>
+        </header>
+        <!--Fim Header-->
+
+        <!--Início-->
+        <main id="inicio" class="inicio">
+            <div class="container-inicio">
+                <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="titulo-inicio">
+                        <h1>Sinergia</h1>
+                        <h2 class="destaque-inicio">Conectando ideias, criando resultados.</h2>
+                        <i class="bi bi-cloud"></i>
+                        <i class="bi bi-recycle"></i>
+                    </div>
+                    <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <p style="font-size: 30px;">Acreditamos que a verdadeira força de uma equipe está na sinergia entre seus membros, onde habilidades se complementam e objetivos se alinham.</p>
+                </div>
+            </div>
+        </main>
+        <!--Fim Início-->
+
+        <!--Sobre-->
+        <section id="sobre" class="sobre">
+            <div class="container-sobre">
+                <!--Slide Sobre-->
+                <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="headline-scroll" id="headline-scroll">
+                        <span class="bold">SOBRE NÓS</span>
+                        <i class="bi bi-cloud" style="font-size: 24px;"></i>
+                        <span class="light">SOBRE NÓS</span>
+                        <i class="bi bi-recycle" style="font-size: 24px;"></i>
+                        <span class="bold">SOBRE NÓS</span>
+                        <i class="bi bi-cloud" style="font-size: 24px;"></i>
+                        <span class="light">SOBRE NÓS</span>
+                        <i class="bi bi-recycle" style="font-size: 24px;"></i>
+                        <span class="bold">SOBRE NÓS</span>
+                        <i class="bi bi-cloud" style="font-size: 24px;"></i>
+                        <span class="light">SOBRE NÓS</span>
+                        <i class="bi bi-recycle" style="font-size: 24px;"></i>
+                    </div>
+                </div>
+                <div class="conteudo-sobre">
+                    <div class="left-sobre" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="textos-sobre">
+                            <p>A Sinergia nasceu da vontade de construir uma equipe verdadeiramente conectada, onde cada talento soma, cada ideia conta e cada desafio é superado em conjunto. </p></br>   
+                             <p>Acreditamos que o sucesso vem da colaboração, da confiança e do propósito compartilhado. Somos mais que um time, somos a equipe dos seus sonhos.</p>
+                        </div>
+                        <div class="redes-sociais">
+                            <a href="" target="_blank">Instagram<i class="bi bi-instagram"></i></a>
+                            <a href="" target="_blank">LinkedIn<i class="bi bi-linkedin"></i></a>
+                            <a href="" target="_blank">YouTube<i class="bi bi-youtube"></i></a>
+                        </div>                        
+                    </div>
+                    <div class="right-sobre" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="complemento-sobre">
+                            <img src="assets/img/recycle.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim Sobre-->
+
+        
+
+        <!--Conectados-->
+        <section id="conectados" class="conectados">
+            <div class="container-conectados" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-conectados">
+                    <h1 class="titulo">Conectados</h1>
+                    <span class="descricao">Conheça os 5 profissionais que fazem a Sinergia acontecer!</span>
+                </div><br/><br/><br/>
+                    <!-- Membro 1 -->
+                    <div class="card" data-aos="fade-up" data-aos-delay="200" onclick="openModal(1)">
+                        <div class="card-image">
+                            <img src="assets/img/marcos.jpeg" alt="Marcos Cardoso">
+                        </div>
+                        <div class="card-text">
+                            <h2>Marcos Cardoso</h2>
+                        </div>
+                        <br>
+                    </div>
+        
+                    <!-- Membro 2 -->
+                    <div class="card" data-aos="fade-up" data-aos-delay="600" onclick="openModal(5)">
+                        <div class="card-image">
+                            <img src="assets/img/manuela.jpeg" alt="Manuela Figueiredo">
+                        </div>
+                        <div class="card-text">
+                            <h2>Manuela Figueiredo</h2>
+                        </div>
+                        <br>
+                    </div>
+
+                    <!-- Membro 3 -->
+                    <div class="card" data-aos="fade-up" data-aos-delay="400" onclick="openModal(3)">
+                        <div class="card-image">
+                            <img src="assets/img/lucas.jpeg" alt="Lucas Paineli">
+                        </div>
+                        <div class="card-text">
+                            <h2>Lucas Paineli</h2>
+                        </div>
+                        <br>
+                    </div>
+
+                    <!-- Membro 4 -->
+                    <div class="card" data-aos="fade-up" data-aos-delay="500" onclick="openModal(4)">
+                        <div class="card-image">
+                            <img src="assets/img/mari.jpeg" alt="Mari Miloch">
+                        </div>
+                        <div class="card-text">
+                            <h2>Mari Miloch</h2>
+                        </div>
+                        <br>
+                    </div>
+
+                    <!-- Membro 5 -->
+                    <div class="card" data-aos="fade-up" data-aos-delay="300" onclick="openModal(2)">
+                        <div class="card-image">
+                            <img src="assets/img/italo.jpeg" alt="Italo Alencar">
+                        </div>
+                        <div class="card-text">
+                            <h2>Italo Alencar</h2>
+                        </div>
+                        <br>
+                    </div>
+            </div>
+        </section>        
+        <!--Fim Conectados-->
+
+        <!--Skills-->
+        <section id="skills" class="skills">
+            <div class="container-skills" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-skills">
+                    <div class="text-headline-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <h2>Skills em Sinergia</h2>
+                        <p>Grandes resultados nascem quando talentos se conectam com propósito e colaboração.</p>
+                    </div>
+                </div>
+                <div class="conteudo-skills">
+                    <div class="box-skills" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+                        <i class="bi bi-palette"></i>
+                        <h3>Criatividade & Identidade</h3>
+                        <p>Exploramos novas ideias e criamos soluções inovadoras, sempre mantendo uma identidade única e marcante.</p>
+                    </div>
+                    <div class="box-skills" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+                        <i class="bi bi-type"></i>
+                        <h3>Expressividade & Comunicação</h3>
+                        <p>Valorizamos uma comunicação eficiente e alinhada, garantindo que todos estejam na mesma página.</p>
+                    </div>
+                    <div class="box-skills" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+                        <i class="bi bi-book"></i>
+                        <h3>Conhecimento & Aprendizado</h3>
+                        <p>Acreditamos no crescimento contínuo, buscando sempre aprimorar nossas habilidades e compartilhar conhecimento.</p>
+                    </div>
+                    <div class="box-skills" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000">
+                        <i class="bi bi-graph-up"></i>
+                        <h3>Estratégia & Resultados</h3>
+                        <p>Planejamos com inteligência e focamos em entregas impactantes, transformando metas em conquistas reais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </br></br></br></br></br></br>
+        <!--Fim Skills-->
+
+        <!--Footer-->
+        <footer class="footer" id="footer">
+            <div class="container-footer">
+                <div class="footer-column logo-column">
+                    <img src="assets/img/logo_extensa_sinergia.png" alt="">
+                </div>
+                <div class="footer-column menu-column">
+                    <nav class="footer-nav">
+                        <a href="#inicio">Início</a>
+                        <a href="#sobre">Sobre Nós</a>
+                        <a href="#conectados">Conectados</a>
+                    </nav>
+                </div>
+                <div class="footer-column social-column">
+                    <ul class="social-links">
+                        <li><a href="" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="" target="_blank"><i class="bi bi-youtube"></i> YouTube</a></li>
+                    </ul>                    
+                </div>
+            </div>
+            <div class="footer-column credits-column">
+                <p>&copy; 2025 Sinergia.</p>
+                <p>Desenvolvido por Paineli.</p>
+            </div>
+        </footer>
+        <!--Fim Footer-->
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--JavaScript-->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/actionButton.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/slideSobre.js"></script>
+    <script src="assets/js/slidePortfolio.js"></script>
+
+<!-- Modais -->
+<div id="modalContainer"></div>
+
+<script>
+const members = [
+    { id: 1, name: "Marcos Cardoso", role: "O Líder", video: "https://www.youtube.com/embed/SEU_VIDEO_ID1", softSkills: ["Liderança", "Comunicação", "Inovação"], hardSkills: ["Ciência da Computação", "Gestão de Projetos"] },
+    { id: 2, name: "Italo Alencar", role: "O Estrategista", video: "https://www.youtube.com/embed/SEU_VIDEO_ID2", softSkills: ["Pensamento Analítico", "Foco em Entregas", "Planejamento 5W2H"], hardSkills: ["Gestão de OKRs", "KPIs"] },
+    { id: 3, name: "Lucas Paineli", role: "O Desenvolvedor", video: "https://www.youtube.com/embed/SEU_VIDEO_ID3", softSkills: ["Criatividade", "Capacidade de Adaptação", "Autodidatismo"], hardSkills: ["Arquitetura de Software", "Programação"] },
+    { id: 4, name: "Mari Miloch", role: "A Comunicadora", video: "https://www.youtube.com/embed/SEU_VIDEO_ID4", softSkills: ["Leitura de Cenários", "Escuta Ativa", "Comunicação Empática"], hardSkills: ["Corporate Finance", "Governança"] },
+    { id: 5, name: "Manuela Figueiredo", role: "A Projetista", video: "https://www.youtube.com/embed/SEU_VIDEO_ID5", softSkills: ["Oganização Estratégica", "Resiliência", "Empatia"], hardSkills: ["Design Gráfico", "Modelagem 3D"] }
+];
+
+const modalContainer = document.getElementById("modalContainer");
+const header = document.querySelector(".header");
+const logo = document.querySelector(".logo img");
+
+members.forEach(member => {
+    const modal = document.createElement("div");
+    modal.classList.add("modal");
+    modal.id = `modal${member.id}`;
+    modal.innerHTML = `
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal(${member.id})">&times;</span>
+            <h2>${member.name}</h2>
+            <p class="role">${member.role}</p><br>
+            <div class="video-container">
+                <iframe src="${member.video}" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="skills">
+                <h3>Soft Skills</h3>
+                <div class="skill-tags">
+                    ${member.softSkills.map(skill => `<span class="tag soft">${skill}</span>`).join('')}
+                </div>
+                <h3>Hard Skills</h3>
+                <div class="skill-tags">
+                    ${member.hardSkills.map(skill => `<span class="tag hard">${skill}</span>`).join('')}
+                </div>
+            </div>
+        </div>
+    `;
+    modal.addEventListener("click", () => closeModal(member.id));
+    modalContainer.appendChild(modal);
+});
+
+function openModal(id) {
+    document.getElementById(`modal${id}`).style.display = "flex";
+    header.classList.add("shrink");
+    logo.classList.add("shrink-logo");
+}
+
+function closeModal(id) {
+    document.getElementById(`modal${id}`).style.display = "none";
+    header.classList.remove("shrink");
+    logo.classList.remove("shrink-logo");
+}
+</script>
+
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.soft {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.hard {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.header.shrink {
+    height: 50px;
+    transition: height 0.3s ease-in-out;
+}
+
+.logo img.shrink-logo {
+    width: 50px;
+    transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+    .header.shrink {
+        height: 40px;
+    }
+    .logo img.shrink-logo {
+        width: 40px;
+    }
+}
+</style>
+
+
+</body>
+
+</html>
