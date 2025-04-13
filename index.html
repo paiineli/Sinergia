@@ -278,6 +278,12 @@ const modalContainer = document.getElementById("modalContainer");
 const header = document.querySelector(".header");
 const logo = document.querySelector(".logo img");
 
+// 🔁 Função para converter link curto para embed do YouTube
+function convertToEmbedUrl(url) {
+    const videoId = url.split("youtu.be/")[1];
+    return `https://www.youtube.com/embed/${videoId}`;
+}
+
 members.forEach(member => {
     const modal = document.createElement("div");
     modal.classList.add("modal");
@@ -287,7 +293,7 @@ members.forEach(member => {
             <span class="close" onclick="closeModal(${member.id})">&times;</span>
             <h2>${member.name}</h2>
             <div class="video-container">
-                <iframe src="${member.video}" frameborder="0" allowfullscreen></iframe>
+                <iframe src="${convertToEmbedUrl(member.video)}" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="skills">
                 <h3>Soft Skills</h3>
@@ -317,6 +323,7 @@ function closeModal(id) {
     logo.classList.remove("shrink-logo");
 }
 </script>
+
 
 <style>
 .modal {
