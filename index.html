@@ -267,11 +267,11 @@
 
 <script>
 const members = [
-    { id: 1, name: "Marcos Cardoso", role: "O Líder", video: "https://www.youtube.com/embed/SEU_VIDEO_ID1", softSkills: ["Liderança", "Comunicação", "Inovação"], hardSkills: ["Ciência da Computação", "Gestão de Projetos"] },
-    { id: 2, name: "Italo Alencar", role: "O Estrategista", video: "https://www.youtube.com/embed/SEU_VIDEO_ID2", softSkills: ["Pensamento Analítico", "Foco em Entregas", "Planejamento 5W2H"], hardSkills: ["Gestão de OKRs", "KPIs"] },
-    { id: 3, name: "Lucas Paineli", role: "O Desenvolvedor", video: "https://www.youtube.com/embed/SEU_VIDEO_ID3", softSkills: ["Criatividade", "Capacidade de Adaptação", "Autodidatismo"], hardSkills: ["Arquitetura de Software", "Programação"] },
-    { id: 4, name: "Mari Miloch", role: "A Comunicadora", video: "https://www.youtube.com/embed/SEU_VIDEO_ID4", softSkills: ["Leitura de Cenários", "Escuta Ativa", "Comunicação Empática"], hardSkills: ["Corporate Finance", "Governança"] },
-    { id: 5, name: "Manuela Figueiredo", role: "A Projetista", video: "https://www.youtube.com/embed/SEU_VIDEO_ID5", softSkills: ["Oganização Estratégica", "Resiliência", "Empatia"], hardSkills: ["Design Gráfico", "Modelagem 3D"] }
+    { id: 1, name: "Marcos Cardoso", video: "https://youtu.be/kypSDWprfi8", softSkills: ["Liderança", "Comunicação", "Inovação"], hardSkills: ["Ciência da Computação", "Gestão de Projetos"] },
+    { id: 2, name: "Italo Alencar", video: "https://youtu.be/-SM2PHV--mo", softSkills: ["Pensamento Analítico", "Foco em Entregas", "Planejamento 5W2H"], hardSkills: ["Gestão de OKRs", "KPIs"] },
+    { id: 3, name: "Lucas Paineli", video: "https://youtu.be/IYwYv0xOd8o", softSkills: ["Criatividade", "Capacidade de Adaptação", "Autodidatismo"], hardSkills: ["Arquitetura de Software", "Programação"] },
+    { id: 4, name: "Mari Miloch", video: "https://youtu.be/ozfYEYrUv50", softSkills: ["Leitura de Cenários", "Escuta Ativa", "Comunicação Empática"], hardSkills: ["Corporate Finance", "Governança"] },
+    { id: 5, name: "Manuela Figueiredo", video: "https://youtu.be/fCGC1PKfLv0", softSkills: ["Oganização Estratégica", "Resiliência", "Empatia"], hardSkills: ["Design Gráfico", "Modelagem 3D"] }
 ];
 
 const modalContainer = document.getElementById("modalContainer");
@@ -286,7 +286,6 @@ members.forEach(member => {
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close" onclick="closeModal(${member.id})">&times;</span>
             <h2>${member.name}</h2>
-            <p class="role">${member.role}</p><br>
             <div class="video-container">
                 <iframe src="${member.video}" frameborder="0" allowfullscreen></iframe>
             </div>
